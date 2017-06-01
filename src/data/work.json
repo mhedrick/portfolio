@@ -1,7 +1,16 @@
 [{
-    "img": "http://placehold.it/350x200",
+    "img": "images/portfolio.png",
     "title": "my portfolio",
     "blurb": "I made a portfolio",
-    "gitLink": "google.com",
-    "link": "google.com"
+    "site": "git",
+    "codeLink": "https://github.com/mhedrick/portfolio",
+    "link": "http://www.maggiekh.com"
+},
+{
+    "img": "images/color_clock.png",
+    "title": "color clock",
+    "blurb": "a very simple code pen showing the current time as a hex value",
+    "site": "codepen",
+    "codeLink": "https://codepen.io/maggiekhedrick/pen/BZBZva",
+    "link": "https://codepen.io/maggiekhedrick/pen/BZBZva"
 }]

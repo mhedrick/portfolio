@@ -14,15 +14,6 @@ class Work extends Component {
                 <p>a selection of projects I've worked on ... mostly for practice.  My production level code is proprietary.</p>
                 <div className="card-columns">
                     {work}
-                    {work}
-                    {work}
-                    {work}
-                    {work}
-                    {work}
-                    {work}
-                    {work}
-                    {work}
-                    {work}
                 </div>
             </div>
         );
