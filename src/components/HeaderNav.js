@@ -6,7 +6,7 @@ import Contact from './Contact';
 class HeaderNav extends Component {
     render() {
         return (
-            <nav className="navbar navbar-toggleable-sm sticky-top navbar-light m-5">
+            <nav className="navbar navbar-expand-lg sticky-top navbar-light m-5">
                 <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
