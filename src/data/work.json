@@ -13,4 +13,12 @@
     "site": "codepen",
     "codeLink": "https://codepen.io/maggiekhedrick/pen/BZBZva",
     "link": "https://codepen.io/maggiekhedrick/pen/BZBZva"
+},
+{
+    "img": "images/color_clock.png",
+    "title": "clicker",
+    "blurb": "working on a clicker/idle game in react & redux as a coding exercise.",
+    "site": "github",
+    "codeLink": "https://github.com/mhedrick/clicker",
+    "link": "https://github.com/mhedrick/clicker"
 }]
