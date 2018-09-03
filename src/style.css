@@ -10,17 +10,16 @@ nav {
 .logo, h1, .h1 {
   font-family: 'Pacifico', cursive; }
 
-#contact div p {
+#contact div i {
   width: 0%;
   height: 0%;
   transition: all .5s;
   overflow: hidden;
   display: inline-block; }
 
-#contact div:hover p {
+#contact div:hover i {
   width: 100%;
   height: 100%; }
 
-.card img {
-  height: 200px;
-  width: 350px; }
+  #contact i:hover {
+    color: black }
