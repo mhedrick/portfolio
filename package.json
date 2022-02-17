@@ -1,19 +1,24 @@
 {
   "name": "portfolio",
   "version": "2.0.0",
-  "private": true,
-  "dependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
-  },
-  "devDependencies": {
-    "npm-run-all": "^4.0.2",
-    "react-scripts": "0.9.5"
-  },
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhedrick/portfolio.git"
+  },
+  "author": "Maggie Hedrick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhedrick/portfolio/issues"
+  },
+  "homepage": "https://github.com/mhedrick/portfolio#readme",
+  "dependencies": {
+    "gatsby": "^4.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
