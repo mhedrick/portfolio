@@ -1,11 +1,15 @@
 ---
 start: '2015-01-01'
-end: '2016-11-30'
+end: '2017-12-31'
 title: 'Software Engineer'
-company: 'Interactive Intelligence'
+company: 'Genesys'
 location: 'Indianapolis IN'
+key: 'genin'
 ---
-
+- Added React, Webpack, NPM, and more modern web practices such as JavaScript compiling
+- Took on a lead role for front end technical direction, including design and code reviews
+- Started converting a product from KnockoutJS to React
+- Began utilizing Azure as well as AWS
 - Captured business requirements for internal web applications relating to project management, quoting, and reporting from stakeholders and executive team
 - Began using Java microservices for a new custom agile project management product
 - Designed and implemented user interfaces and user experience with Balsamiq and Sketch for mockups

@@ -4,6 +4,7 @@ end: '2014-12-31'
 title: 'Application Developer'
 company: 'Interactive Intelligence'
 location: 'Indianapolis IN'
+key: 'genin'
 ---
 
 - Full stack development using C# (.NET), JavaScript with Bootstrap 3 and Knockout JS

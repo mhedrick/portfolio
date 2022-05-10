@@ -4,6 +4,7 @@ end: '2019-06-07'
 title: 'Senior Software Engineer'
 company: 'Genesys'
 location: 'Indianapolis IN'
+key: 'genin'
 ---
 
 - Took lead for front end technical direction and design of multiple products

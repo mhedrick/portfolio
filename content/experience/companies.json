@@ -1,0 +1,20 @@
+[
+    {
+        "name": "DyKnow",
+        "start": "2013-06-01",
+        "end": "2013-08-31",
+        "key": "dyknow"
+    },
+    {
+        "name": "Genesys / Interactive Intelligence",
+        "start": "2013-08-28",
+        "end": "2019-06-07",
+        "key": "genin"
+    },
+    {
+        "name": "KAR Global",
+        "start": "2019-06-17",
+        "end": "",
+        "key": "kar"
+    }
+]

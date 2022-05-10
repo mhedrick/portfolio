@@ -1,36 +1,17 @@
-import React from "react"
-import { useStaticQuery, graphql } from 'gatsby';
+import React from "react";
 
-import Container from 'react-bootstrap/Container';
+const EducationList = ({ education }) => {
 
-const EducationList = () => {
-    const { education } = useStaticQuery(graphql`
-    query {
-        education: allEducationJson {
-          edges {
-            node {
-              major
-              minor
-              school
-              range
-              degree
-            }
-          }
-        }
-      }
-    `);
+    let { major, minor, school, range, degree } = education;
 
 
     return (
-        <Container fluid>
+        <React.Fragment>
             <h2>Education</h2>
-            {education.edges && education.edges.map(({node}, i) => {
-                const {major, minor, school, range, degree} = node;
-                return <Container key={`education-${i}`}>
-                    <b>{major} {degree} {school}</b> {range}<br />
-                    </Container>
-            })}
-        </Container>);
+            <h3>{degree} in {major}</h3>
+            <h4>{`${school} // ${range}`}</h4>
+            <p>minor in {minor}</p>
+        </React.Fragment>);
 }
 
 export default EducationList; 

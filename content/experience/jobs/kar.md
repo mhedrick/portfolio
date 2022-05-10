@@ -1,9 +1,9 @@
 ---
 start: '2019-06-17'
-end: ''
 title: 'Product Owner'
 company: 'KAR Global'
 location: 'Carmel IN'
+key: 'kar'
 ---
 
 - Prioritized and refined product backlogs for two SRE teams

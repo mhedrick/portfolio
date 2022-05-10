@@ -1,6 +1,7 @@
 import * as React from "react"
-import { useStaticQuery, graphql } from 'gatsby';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { useStaticQuery, graphql } from "gatsby";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.json";
 import "@fontsource/pacifico"
 import "@fontsource/readex-pro"
 import "@fontsource/raleway"
@@ -31,7 +32,7 @@ const Layout = ({ children }) => {
     return (
         <main>
             <title>{site.siteMetadata.title}</title>
-            <Navbar fixed="top" >
+            <Navbar fixed="top" style={{backgroundColor: 'white', marginLeft: "calc(100vw - 100%)"}}>
                 <Container>
                     <Navbar.Brand style={{ fontFamily: "pacifico" }}>
                         <Link to="/">
@@ -41,16 +42,15 @@ const Layout = ({ children }) => {
                     <Nav as="ul" className="justify-content-end" style={{ fontFamily: "raleway" }}>
                         <Nav.Link as={Link} to="/about" activeClassName="active">About</Nav.Link>
                         <Nav.Link as={Link} to="/experience" activeClassName="active">Experience</Nav.Link>
-                        <Nav.Link as={Link} to="/projects" activeClassName="active">Projects</Nav.Link>
+                        <Navbar.Text><a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Résumé <i className="bi-alarm" /></a></Navbar.Text>
                     </Nav>
                 </Container>
             </Navbar>
-            <Container className="mt-5" style={{ fontFamily: "readex pro" }}>
+            <Container className="mt-5 pt-2 overflow-hidden" style={{ fontFamily: "readex pro", maxHeight: "100%" }}>
                 {children}
             </Container>
         </main>
     )
 }
 
-
-export default Layout
+export default Layout;

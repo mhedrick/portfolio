@@ -1,14 +1,14 @@
 [
     {
         "header": "Programming Languages",
-        "values": ["Javascript"]
+        "values": ["Javascript", "CSS", "HTML", "C# (.NET)"]
     },
     {
         "header": "Libraries & Frameworks",
-        "values": []
+        "values": ["ReactJS", "Bootstrap", "KnockoutJS", "SAFe Agile"]
     },
     {
         "header": "Tools & Platforms",
-        "values": []
+        "values": ["VS Code", "Visual Studio", "Sketch"]
     }
 ]

@@ -4,6 +4,7 @@ end: '2013-08-31'
 title: 'Development Intern'
 company: 'DyKnow'
 location: 'Indianapolis IN'
+key: 'dyknow'
 ---
 
 - Led project from requirements through architecture, design, and implementation stages using the agile development cycle using KnockoutJS and C# with unit testing in each. 

@@ -1,29 +1,12 @@
 import * as React from "react"
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
 // markup 
-const Job = ({ title, company, start, end, location, html }) => {
+const Job = ({ title, start, end, html }) => {
     return (
-        <Container fluid>
-            <Row>
-                <Col>
-                    <span><b>{title}</b> @ {company}</span>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <span>{start} - {end} | {location}</span>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <div dangerouslySetInnerHTML={{ __html: html }} />
-                </Col>
-            </Row>
-        </Container>);
+        <React.Fragment>
+            <h4>{title} // {start} - {end ?? "now"}</h4>
+            <span dangerouslySetInnerHTML={{ __html: html }} />
+        </React.Fragment>);
 }
 
 

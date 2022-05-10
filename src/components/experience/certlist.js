@@ -1,31 +1,17 @@
-import React from "react"
-import { useStaticQuery, graphql } from 'gatsby';
+import React from "react";
 
 import Container from 'react-bootstrap/Container';
 
-const CertList = () => {
-    const { certs } = useStaticQuery(graphql`
-    query {
-        certs: allCertificationsJson {
-            edges {
-              node {
-                name
-              }
-            }
-          }
-      }
-    `);
-
-
+const CertList = ({certs}) => {
     return (
-        <Container fluid>
+        <React.Fragment>
             <h2>Certifications</h2>
-            {certs.edges && certs.edges.map(({node}, i) => {
+            {certs && certs.map((cert, i) => {
                 return <Container key={`certs-${i}`}>
-                    {node.name}
+                    {cert.name}
                     </Container>
             })}
-        </Container>);
+        </React.Fragment>);
 }
 
 export default CertList; 

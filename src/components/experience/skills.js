@@ -1,35 +1,18 @@
 import React from "react"
-import { useStaticQuery, graphql } from 'gatsby';
-
-import Container from 'react-bootstrap/Container';
 
 // add tags of skills used?
 
-const SkillList = () => {
-    const { skills } = useStaticQuery(graphql`
-    query {
-        skills: allSkillsJson {
-          edges {
-            node {
-              header
-              values
-            }
-          }
-        }
-      }
-    `);
-
-
+const SkillList = ({ skills }) => {
     return (
-        <Container fluid>
+        <React.Fragment>
             <h2>Skills</h2>
-            {skills.edges && skills.edges.map(({node}, i) => {
-                return <Container key={`skills-${i}`}>
-                    <b>{node.header}</b><br />
-                    {node.values.join(", ")}
-                    </Container>
+            {skills && skills.map((skill, i) => {
+                return <div key={`skills-${i}`}>
+                    <b>{skill.header}</b><br />
+                    {skill.values.join(", ")}
+                    </div>
             })}
-        </Container>);
+        </React.Fragment>);
 }
 
 export default SkillList; 
