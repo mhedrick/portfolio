@@ -1,0 +1,46 @@
+body {
+    font-family: "readex pro";
+    --primary-color: #5e6472;
+    --secondary-color: #aed9e0;
+}
+
+.navbar-brand {
+    font-family: "passion one";
+}
+
+.navbar-brand a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.navbar-brand a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+nav {
+    background-color: white;
+}
+
+h1 {
+    font-family: "passion one";
+    color: var(--primary-color);
+}
+h1 span{
+    color: var(--secondary-color);
+}
+h2 {
+    font-weight: bold;
+    color: var(--primary-color);
+    border-bottom: 5px solid var(--secondary-color);
+}
+h3 {
+    color: var(--primary-color);
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+h4 {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    color: #838893;
+}

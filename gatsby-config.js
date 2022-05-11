@@ -11,6 +11,12 @@ module.exports = {
             },
         },
         `gatsby-transformer-remark`,
-        `gatsby-transformer-json`
+        `gatsby-transformer-json`,
+        {
+            resolve: "gatsby-plugin-anchor-links",
+            options: {
+              offset: -50
+            }
+          }
     ],
 }

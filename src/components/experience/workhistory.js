@@ -9,7 +9,6 @@ const JobList = ({jobs, companies}) => {
 
     return (
         <React.Fragment>
-            <h2>Work History</h2>
             {jobs && sortedCompanies.map((company) => {
                 let positions = jobs.filter((j) => j.frontmatter.key === company.key);
 

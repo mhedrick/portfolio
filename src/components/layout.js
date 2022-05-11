@@ -1,19 +1,13 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.json";
-import "@fontsource/pacifico"
-import "@fontsource/readex-pro"
-import "@fontsource/raleway"
+import "../components/layout.css"
 
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-// todo: graphql site metadata, nav links https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
-// https://www.gatsbyjs.com/docs/how-to/querying-data/page-query/
-/**/
+// todo: nav links?
 
 // todo: darkmode / lightmode
 
@@ -30,26 +24,26 @@ const Layout = ({ children }) => {
     `);
 
     return (
-        <main>
-            <title>{site.siteMetadata.title}</title>
-            <Navbar fixed="top" style={{backgroundColor: 'white', marginLeft: "calc(100vw - 100%)"}}>
-                <Container>
-                    <Navbar.Brand style={{ fontFamily: "pacifico" }}>
-                        <Link to="/">
-                            maggie k hedrick
-                        </Link>
-                    </Navbar.Brand>
-                    <Nav as="ul" className="justify-content-end" style={{ fontFamily: "raleway" }}>
-                        <Nav.Link as={Link} to="/about" activeClassName="active">About</Nav.Link>
-                        <Nav.Link as={Link} to="/experience" activeClassName="active">Experience</Nav.Link>
-                        <Navbar.Text><a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Résumé <i className="bi-alarm" /></a></Navbar.Text>
-                    </Nav>
+            <main>
+                <title>{site.siteMetadata.title}</title>
+                <Navbar id="main-nav" fixed="top" style={{ marginLeft: "calc(100vw - 100%)" }}>
+                    <Container>
+                        <Navbar.Brand>
+                            <a href="/">maggie k hedrick</a>
+                        </Navbar.Brand>
+                        <Nav as="ul" className="justify-content-end">
+                            <Nav.Item><Nav.Link as={AnchorLink} to="/#about">About</Nav.Link></Nav.Item>
+                            <Navbar.Text>//</Navbar.Text>
+                            <Nav.Item><Nav.Link as={AnchorLink} to="/#experience">Experience</Nav.Link></Nav.Item>
+                            <Navbar.Text>//</Navbar.Text>
+                            <Nav.Item><Nav.Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" active={false}>Résumé <i className="bi-box-arrow-up-right" /></Nav.Link></Nav.Item>
+                        </Nav>
+                    </Container>
+                </Navbar>
+                <Container className="mt-5 pt-2 overflow-hidden" style={{ width: "60%" }}>
+                    {children}
                 </Container>
-            </Navbar>
-            <Container className="mt-5 pt-2 overflow-hidden" style={{ fontFamily: "readex pro", maxHeight: "100%" }}>
-                {children}
-            </Container>
-        </main>
+            </main>
     )
 }
 
