@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
                         </Nav>
                     </Container>
                 </Navbar>
-                <Container className="mt-5 pt-2 overflow-hidden" style={{ width: "60%" }}>
+                <Container style={{ width: "60%" }}>
                     {children}
                 </Container>
             </main>

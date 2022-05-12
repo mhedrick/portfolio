@@ -4,6 +4,10 @@ body {
     --secondary-color: #aed9e0;
 }
 
+.hero {
+    height: 100vh;
+}
+
 .navbar-brand {
     font-family: "passion one";
 }

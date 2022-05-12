@@ -1,18 +1,29 @@
 import React from "react"
+import { useStaticQuery, graphql } from 'gatsby';
 
-// add tags of skills used?
+const Skills = () => {
+    const { skills } = useStaticQuery(graphql`
+    query {
+          skills: allSkillsJson {
+              nodes {
+                header
+                values
+              }
+          }
+    }`);
 
-const SkillList = ({ skills }) => {
     return (
-        <React.Fragment>
+        <section>
             <h2>Skills</h2>
-            {skills && skills.map((skill, i) => {
-                return <div key={`skills-${i}`}>
+            <ul>
+            {skills.nodes && skills.nodes.map((skill, i) => {
+                return <li key={`skills-${i}`}>
                     <b>{skill.header}</b><br />
                     {skill.values.join(", ")}
-                    </div>
+                    </li>
             })}
-        </React.Fragment>);
+            </ul>
+        </section>);
 }
 
-export default SkillList; 
+export default Skills; 
