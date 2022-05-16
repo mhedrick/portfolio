@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
                 <Navbar id="main-nav" fixed="top" style={{ marginLeft: "calc(100vw - 100%)" }}>
                     <Container>
                         <Navbar.Brand>
-                            <a href="/">maggie k hedrick</a>
+                            <a href="/#hero">maggie k hedrick</a>
                         </Navbar.Brand>
                         <Nav as="ul" className="justify-content-end">
                             <Nav.Item><Nav.Link as={AnchorLink} to="/#about">About</Nav.Link></Nav.Item>

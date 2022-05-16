@@ -44,13 +44,16 @@ const Jobs = () => {
         .sort((a, b) => b.start - a.start);
 
     return (
-        <ul>
-            {sortedCompanies.map((company) => {
-                let positions = jobs.nodes.filter((j) => j.frontmatter.key === company.key);
+        <section>
+            <h2>Work History</h2>
+            <ul>
+                {sortedCompanies.map((company) => {
+                    let positions = jobs.nodes.filter((j) => j.frontmatter.key === company.key);
 
-                return <Company {...company} positions={positions} />
-            })}
-        </ul>);
+                    return <Company {...company} positions={positions} />
+                })}
+            </ul>
+        </section>);
 }
 
 export default Jobs; 

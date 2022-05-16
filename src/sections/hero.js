@@ -3,29 +3,34 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 const Hero = () => {
 
-    const { contactinfo } = useStaticQuery(graphql`
+    const { contacts } = useStaticQuery(graphql`
     query {
-        contactinfo: contactJson {
-            email
-            github
-            linkedin
-            phone
+        contacts: allContactJson {
+            nodes {
+              icon
+              type
+              link
+              display
+            }
           }
         }`);
 
     return (
         <section id="about" className="hero d-flex align-items-center">
         <div className="w-100">
-            <h1 className="display-1">Hi! My name is <span>Maggie</span>.</h1>
+            <h1 className="display-1">Hi! My name is <em>Maggie</em>.</h1>
             <p>
-                I'm a former <b>web developer</b> turned <b>product owner</b>.  JavaScript is my passion.
+                I'm a former <em>web developer</em> turned <em>product owner</em>.  JavaScript is my passion.
             </p>
-            <div className="contact-info d-flex justify-content-between mb-5 pb-5">
-                <span>{contactinfo.email}</span>
-                <span>{contactinfo.linkedin}</span>
-                <span>{contactinfo.github}</span>
-                <span>{contactinfo.phone}</span>
-            </div>
+            <ul id="contact-info" class="d-flex justify-content-between">
+                {
+                    contacts.nodes.map((contact, i) => {
+                        return <li key={`contact-${i}`}>
+                                <a href={`${contact.type != "link" ? `${contact.type}:` : ""}${contact.link}`}><i className={contact.icon}></i> {contact.display}</a>
+                            </li>
+                    })
+                }
+            </ul>
         </div>
     </section>);
 }

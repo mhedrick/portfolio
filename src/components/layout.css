@@ -3,6 +3,9 @@ body {
     --primary-color: #5e6472;
     --secondary-color: #aed9e0;
 }
+em {
+    font-style: normal;
+}
 
 .hero {
     height: 100vh;
@@ -18,7 +21,8 @@ body {
 }
 .navbar-brand a:hover {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: color .15s ease-in-out;
 }
 
 nav {
@@ -29,13 +33,25 @@ h1 {
     font-family: "passion one";
     color: var(--primary-color);
 }
-h1 span{
+h1 em{
     color: var(--secondary-color);
 }
 h2 {
     font-weight: bold;
     color: var(--primary-color);
-    border-bottom: 5px solid var(--secondary-color);
+    position: relative;
+    display: inline-block;
+}
+h2::after {
+    position: absolute;
+    content: "";
+    border-bottom: 10px solid var(--secondary-color);
+    top: -10px;
+    left: 0px;
+    width: 250px;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: -1;
 }
 h3 {
     color: var(--primary-color);
@@ -47,4 +63,25 @@ h4 {
     font-size: 1.1rem;
     margin-bottom: 0;
     color: #838893;
+}
+p em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+ul#contact-info {
+    list-style-type: none;
+    padding: 0;
+}
+#contact-info a {
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+#contact-info a:hover {
+    color: var(--secondary-color);
+    transition: color .15s ease-in-out;
+}
+#contact-info a i {
+    color: var(--primary-color);
 }
