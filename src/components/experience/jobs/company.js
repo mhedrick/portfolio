@@ -8,7 +8,7 @@ const Company = ({ names, positions }) => {
     return (
         <li>
             <h3>{names.join(" / ")}</h3>
-            <ul>
+            <ul className="position">
                 {positions && positions.map((position, i) => <Position {...position.frontmatter} html={position.html} key={`position-${i}`} />)}
             </ul>
         </li>);

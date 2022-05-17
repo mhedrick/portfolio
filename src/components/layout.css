@@ -3,6 +3,7 @@ body {
     --primary-color: #5e6472;
     --secondary-color: #aed9e0;
 }
+
 em {
     font-style: normal;
 }
@@ -19,6 +20,7 @@ em {
     text-decoration: none;
     color: var(--primary-color);
 }
+
 .navbar-brand a:hover {
     text-decoration: none;
     color: var(--secondary-color);
@@ -32,56 +34,78 @@ nav {
 h1 {
     font-family: "passion one";
     color: var(--primary-color);
+    font-size: 5rem;
 }
-h1 em{
+
+h1 em {
     color: var(--secondary-color);
 }
+
 h2 {
     font-weight: bold;
     color: var(--primary-color);
-    position: relative;
-    display: inline-block;
+    overflow:hidden;
 }
+
 h2::after {
-    position: absolute;
     content: "";
-    border-bottom: 10px solid var(--secondary-color);
-    top: -10px;
-    left: 0px;
-    width: 250px;
-    height: 100%;
-    box-sizing: border-box;
-    z-index: -1;
+    display: inline-block;
+    height: 0.75em;
+    vertical-align: bottom;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 10px solid var(--secondary-color);
 }
+
 h3 {
     color: var(--primary-color);
     margin-bottom: 0;
     font-size: 1.5rem;
 }
+
 h4 {
     font-style: italic;
     font-size: 1.1rem;
     margin-bottom: 0;
     color: #838893;
 }
+
 p em {
     font-style: normal;
     font-weight: bold;
+    color: var(--primary-color);
 }
 
-ul#contact-info {
+section#about {
+    margin-bottom: 10rem;
+}
+
+ul {
     list-style-type: none;
     padding: 0;
 }
+
+.position ul {
+    padding-left: 2rem;
+}
+
+.position ul li::marker {
+    content: "»";
+    letter-spacing: .5rem;
+}
+
 #contact-info a {
-    font-weight: bold;
+    font-weight: normal;
     color: var(--primary-color);
     text-decoration: none;
 }
-#contact-info a:hover {
+
+#contact-info a:hover, nav #contact-info a:hover i {
     color: var(--secondary-color);
     transition: color .15s ease-in-out;
 }
+
 #contact-info a i {
     color: var(--primary-color);
 }

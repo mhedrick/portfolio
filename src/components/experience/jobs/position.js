@@ -4,7 +4,7 @@ import * as React from "react"
 const Position = ({ title, start, end, html }) => {
     return (
         <li>
-            <h4>{`${title} // ${start} - ${end ?? "now"}`}</h4>
+            <h4 className="d-flex justify-content-between"><span>{title}</span><span>{`${start} - ${end ?? "now"}`}</span></h4>
             <span dangerouslySetInnerHTML={{ __html: html }} />
         </li>);
 }

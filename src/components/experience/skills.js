@@ -18,7 +18,7 @@ const Skills = () => {
             <ul>
             {skills.nodes && skills.nodes.map((skill, i) => {
                 return <li key={`skills-${i}`}>
-                    <b>{skill.header}</b><br />
+                    <h3>{skill.header}</h3>
                     {skill.values.join(", ")}
                     </li>
             })}

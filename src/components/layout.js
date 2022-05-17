@@ -7,6 +7,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
+import Contact from './contact';
+
 // todo: nav links?
 
 // todo: darkmode / lightmode
@@ -26,7 +28,7 @@ const Layout = ({ children }) => {
     return (
             <main>
                 <title>{site.siteMetadata.title}</title>
-                <Navbar id="main-nav" fixed="top" style={{ marginLeft: "calc(100vw - 100%)" }}>
+                <Navbar id="main-nav" fixed="top">
                     <Container>
                         <Navbar.Brand>
                             <a href="/#hero">maggie k hedrick</a>
@@ -43,6 +45,14 @@ const Layout = ({ children }) => {
                 <Container style={{ width: "60%" }}>
                     {children}
                 </Container>
+                <Navbar className="mt-5">
+                    <Container className="d-flex justify-content-center">
+                        <Nav as="ul" className="flex-column">
+                            <Navbar.Text>Designed and built by Maggie Hedrick</Navbar.Text>
+                            <Contact className="d-flex justify-content-center"/>
+                        </Nav>
+                    </Container>
+                </Navbar>
             </main>
     )
 }
