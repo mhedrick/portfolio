@@ -5,6 +5,7 @@ title: 'Software Engineer'
 company: 'Genesys'
 location: 'Indianapolis IN'
 key: 'genin'
+skills: ["KnockoutJS", "React", "Bootstrap 4", "Sketch", "NET 4.6", "MS SQL", "Entity Framework", "UI/UX", "AWS", "GitHub", "Java"]
 ---
 - Added React, Webpack, NPM, and more modern web practices such as JavaScript compiling
 - Took on a lead role for front end technical direction, including design and code reviews

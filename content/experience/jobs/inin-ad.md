@@ -5,6 +5,7 @@ title: 'Application Developer'
 company: 'Interactive Intelligence'
 location: 'Indianapolis IN'
 key: 'genin'
+skills: ["KnockoutJS", "Bootstrap 3", ".NET 4.6", "MS SQL", "Entity Framework", "UI/UX", "GitHub", "Balsamiq"]
 ---
 
 - Full stack development using C# (.NET), JavaScript with Bootstrap 3 and Knockout JS

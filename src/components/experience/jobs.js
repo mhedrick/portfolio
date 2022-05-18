@@ -20,6 +20,7 @@ const Jobs = () => {
                 start(formatString: "MMM YYYY")
                 title
                 key
+                skills
               }
             }
           }

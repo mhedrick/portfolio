@@ -5,6 +5,7 @@ title: 'Senior Software Engineer'
 company: 'Genesys'
 location: 'Indianapolis IN'
 key: 'genin'
+skills: ["KnockoutJS", "React", "Bootstrap 4", "Sketch", ".NET 4.6", "MS SQL", "Entity Framework", "UI/UX", "AWS", "Azure", "GitHub", "Java"]
 ---
 
 - Took lead for front end technical direction and design of multiple products

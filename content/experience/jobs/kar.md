@@ -1,9 +1,11 @@
 ---
 start: '2019-06-17'
+end: '2022-05-19'
 title: 'Product Owner'
 company: 'KAR Global'
 location: 'Carmel IN'
 key: 'kar'
+skills: ["Jira", "Azure DevOps", "AWS", "SAFe 5", "Agile Transformation", "Node.js"]
 ---
 
 - Prioritized and refined product backlogs for two SRE teams
