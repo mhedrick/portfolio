@@ -5,9 +5,7 @@ title: 'Product Owner'
 company: 'KAR Global'
 location: 'Carmel IN'
 key: 'kar'
-skills: ["Jira", "Azure DevOps", "AWS", "SAFe 5", "Agile Transformation", "Node.js"]
 ---
-
 - Prioritized and refined product backlogs for two SRE teams
 - Communicated project statuses to stakeholders through various syncs and demos
 - Accepted work in order to ensure acceptance criteria and definition of done was met

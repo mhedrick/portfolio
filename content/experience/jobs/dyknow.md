@@ -5,8 +5,6 @@ title: 'Development Intern'
 company: 'DyKnow'
 location: 'Indianapolis IN'
 key: 'dyknow'
-skills: ["KnockoutJS", "C#", "GitHub"]
 ---
-
 - Led project from requirements through architecture, design, and implementation stages using the agile development cycle using KnockoutJS and C# with unit testing in each. 
 - Utilized Github during the development process.

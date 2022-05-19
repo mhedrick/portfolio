@@ -14,44 +14,36 @@ const Jobs = () => {
             nodes {
               html
               frontmatter {
-                company
                 end(formatString: "MMM YYYY")
-                location
                 start(formatString: "MMM YYYY")
                 title
                 key
-                skills
               }
             }
           }
-          companies: allMarkdownRemark(
-            filter: {fileAbsolutePath: {regex: "/experience/jobs/"}}
-            sort: {fields: [frontmatter___start], order: ASC}
+          companies:   allMarkdownRemark(
+            filter: {fileAbsolutePath: {regex: "/experience/companies/"}}
+            sort: {order: DESC, fields: [frontmatter___order]}
           ) {
-            group(field: frontmatter___key) {
-              names: distinct(field: frontmatter___company)
-              key: fieldValue
-              nodes {
-                frontmatter {
-                  start
-                }
+            nodes {
+              frontmatter {
+                company
+                key
+                skills
               }
+              html
             }
           }
     }`);
-    // there is a bug in gatsby's graphql that prevents grouped items from storing max/min dates and thus sorting them
-    let sortedCompanies = companies.group
-        .map(c => ({ key: c.key, names: c.names, start: new Date(c.nodes[0].frontmatter.start) }))
-        .sort((a, b) => b.start - a.start);
 
     return (
         <section>
             <h2>Work History</h2>
             <ul>
-                {sortedCompanies.map((company) => {
-                    let positions = jobs.nodes.filter((j) => j.frontmatter.key === company.key);
+                {companies.nodes.map((company) => {
+                    let positions = jobs.nodes.filter((j) => j.frontmatter.key === company.frontmatter.key);
 
-                    return <Company {...company} positions={positions} />
+                    return <Company {...company.frontmatter} html={company.html} positions={positions} />
                 })}
             </ul>
         </section>);

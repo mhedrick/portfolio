@@ -1,7 +1,9 @@
 body {
     font-family: "readex pro";
-    --primary-color: #5e6472;
-    --secondary-color: #aed9e0;
+    --bs-primary: #5e6472;
+    --bs-primary-rgb: 94,100,114;
+    --bs-secondary: #aed9e0;
+    --bs-secondary-rgb: 174,217,224;
 }
 
 em {
@@ -12,38 +14,33 @@ em {
     height: 100vh;
 }
 
+.navbar {
+    background-color: var(--bs-white);
+}
+
 .navbar-brand {
     font-family: "passion one";
 }
 
 .navbar-brand a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--bs-primary);
 }
 
-.navbar-brand a:hover {
-    text-decoration: none;
-    color: var(--secondary-color);
-    transition: color .15s ease-in-out;
-}
-
-nav {
-    background-color: white;
-}
 
 h1 {
     font-family: "passion one";
-    color: var(--primary-color);
+    color: var(--bs-primary);
     font-size: 5rem;
 }
 
 h1 em {
-    color: var(--secondary-color);
+    color: var(--bs-secondary);
 }
 
 h2 {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--bs-primary);
     overflow:hidden;
 }
 
@@ -55,26 +52,30 @@ h2::after {
     width: 100%;
     margin-right: -100%;
     margin-left: 10px;
-    border-top: 10px solid var(--secondary-color);
+    border-top: 10px solid var(--bs-secondary);
 }
 
 h3 {
-    color: var(--primary-color);
+    color: var(--bs-primary);
     margin-bottom: 0;
     font-size: 1.5rem;
+}
+
+.company h3 {
+    font-weight: bold;
 }
 
 h4 {
     font-style: italic;
     font-size: 1.1rem;
     margin-bottom: 0;
-    color: #838893;
+    color: var(--bs-primary);
 }
 
 p em {
     font-style: normal;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--bs-primary);
 }
 
 section#about {
@@ -86,26 +87,45 @@ ul {
     padding: 0;
 }
 
-.position ul {
+.company {
+    margin-bottom: 1rem;
+}
+
+.company .badge {
+    font-weight: 100;
+    border: 2px solid var(--bs-secondary);
+    color: var(--bs-primary);
+    background-color: var(--bs-white) !important;
+}
+
+.company p, .position p {
+    margin-bottom: .5rem;
+}
+.position strong {
+    color: var(--bs-primary);
+}
+
+.position  ul {
     padding-left: 2rem;
 }
 
 .position ul li::marker {
     content: "»";
     letter-spacing: .5rem;
+    color: var(--bs-primary);
 }
 
 #contact-info a {
     font-weight: normal;
-    color: var(--primary-color);
+    color: var(--bs-primary);
     text-decoration: none;
 }
 
 #contact-info a:hover, nav #contact-info a:hover i {
-    color: var(--secondary-color);
+    color: var(--bs-secondary);
     transition: color .15s ease-in-out;
 }
 
 #contact-info a i {
-    color: var(--primary-color);
+    color: var(--bs-primary);
 }

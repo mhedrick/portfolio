@@ -1,14 +1,14 @@
 [
     {
         "header": "Programming Languages",
-        "values": ["Javascript", "CSS", "HTML", "C# (.NET)"]
+        "values": ["Javascript", "CSS", "HTML", "C# (.NET)", "MS SQL", "PostGreSQL", "Java"]
     },
     {
         "header": "Libraries & Frameworks",
-        "values": ["ReactJS", "Bootstrap", "KnockoutJS", "SAFe Agile"]
+        "values": ["React", "Bootstrap 3-5", "Node.js", "KnockoutJS", "Entity Framework", "SAFe Agile"]
     },
     {
         "header": "Tools & Platforms",
-        "values": ["VS Code", "Visual Studio", "Sketch"]
+        "values": ["VS Code", "GitHub", "Jira", "ADO", "Bitbucket", "Visual Studio", "Sketch"]
     }
 ]
