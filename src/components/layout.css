@@ -1,0 +1,131 @@
+body {
+    font-family: "readex pro";
+    --bs-primary: #5e6472;
+    --bs-primary-rgb: 94,100,114;
+    --bs-secondary: #aed9e0;
+    --bs-secondary-rgb: 174,217,224;
+}
+
+em {
+    font-style: normal;
+}
+
+.hero {
+    height: 100vh;
+}
+
+.navbar {
+    background-color: var(--bs-white);
+}
+
+.navbar-brand {
+    font-family: "passion one";
+}
+
+.navbar-brand a {
+    text-decoration: none;
+    color: var(--bs-primary);
+}
+
+
+h1 {
+    font-family: "passion one";
+    color: var(--bs-primary);
+    font-size: 5rem;
+}
+
+h1 em {
+    color: var(--bs-secondary);
+}
+
+h2 {
+    font-weight: bold;
+    color: var(--bs-primary);
+    overflow:hidden;
+}
+
+h2::after {
+    content: "";
+    display: inline-block;
+    height: 0.75em;
+    vertical-align: bottom;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 10px solid var(--bs-secondary);
+}
+
+h3 {
+    color: var(--bs-primary);
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.company h3 {
+    font-weight: bold;
+}
+
+h4 {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    color: var(--bs-primary);
+}
+
+p em {
+    font-style: normal;
+    font-weight: bold;
+    color: var(--bs-primary);
+}
+
+section#about {
+    margin-bottom: 10rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.company {
+    margin-bottom: 1rem;
+}
+
+.company .badge {
+    font-weight: 100;
+    border: 2px solid var(--bs-secondary);
+    color: var(--bs-primary);
+    background-color: var(--bs-white) !important;
+}
+
+.company p, .position p {
+    margin-bottom: .5rem;
+}
+.position strong {
+    color: var(--bs-primary);
+}
+
+.position  ul {
+    padding-left: 2rem;
+}
+
+.position ul li::marker {
+    content: "»";
+    letter-spacing: .5rem;
+    color: var(--bs-primary);
+}
+
+#contact-info a {
+    font-weight: normal;
+    color: var(--bs-primary);
+    text-decoration: none;
+}
+
+#contact-info a:hover, nav #contact-info a:hover i {
+    color: var(--bs-secondary);
+    transition: color .15s ease-in-out;
+}
+
+#contact-info a i {
+    color: var(--bs-primary);
+}

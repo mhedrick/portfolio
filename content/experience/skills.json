@@ -1,0 +1,14 @@
+[
+    {
+        "header": "Programming Languages",
+        "values": ["Javascript", "CSS", "HTML", "C# (.NET)", "MS SQL", "PostGreSQL", "Java"]
+    },
+    {
+        "header": "Libraries & Frameworks",
+        "values": ["React", "Bootstrap 3-5", "Node.js", "KnockoutJS", "Entity Framework", "SAFe Agile"]
+    },
+    {
+        "header": "Tools & Platforms",
+        "values": ["VS Code", "GitHub", "Jira", "ADO", "Bitbucket", "Visual Studio", "Sketch"]
+    }
+]

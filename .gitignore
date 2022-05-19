@@ -8,6 +8,9 @@
 
 # production
 /build
+/public
+! /public/favicon.ico
+! /public/resume.pdf
 
 # misc
 .DS_Store

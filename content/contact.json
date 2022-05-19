@@ -1,0 +1,26 @@
+[
+    {
+        "type": "mailto",
+        "link": "me@maggiekh.com",
+        "display": "me@maggiekh.com",
+        "icon": "bi-envelope-fill"
+    },
+    {
+        "type": "link",
+        "link": "https://linkedin.com/in/maggiekhedrick/",
+        "display": "/maggiekhedrick",
+        "icon": "bi-linkedin"
+    },
+    {
+        "type": "link",
+        "link": "https://github.com/mhedrick",
+        "display": "/mhedrick",
+        "icon": "bi-github"
+    },
+    {
+        "type": "tel",
+        "link": "317-759-3014",
+        "display": "317-759-3014",
+        "icon": "bi-telephone-fill"
+    }
+]
