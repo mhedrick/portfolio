@@ -14,7 +14,13 @@
     {
         "name": "KAR Global",
         "start": "2019-06-17",
-        "end": "",
+        "end": "2022-05-19",
         "key": "kar"
+    },
+    {
+        "name": "DMI",
+        "start": "2022-09-06",
+        "end": "",
+        "key": "dmi"
     }
 ]

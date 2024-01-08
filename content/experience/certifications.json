@@ -6,5 +6,13 @@
         "expiry": "2025-05-04",
         "credentialID": "SH23NNZCBB44QJ39",
         "verificationURL": "https://aw.certmetrics.com/amazon/public/verification.aspx"
+    },     
+    {
+        "name": "AWS Certified Solutions Architect - Associate",
+        "org": "Amazon",
+        "issue": "2023-08-16",
+        "expiry": "2026-08-16",
+        "credentialID": "6X6B1GLKWNB410SV",
+        "verificationURL": "https://aw.certmetrics.com/amazon/public/verification.aspx"
     }
 ]
